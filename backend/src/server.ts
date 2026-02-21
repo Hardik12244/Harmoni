@@ -12,15 +12,14 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/rooms',(req,res)=>{
-    const room = nanoid(6);
-    rooms[room]={
+    const roomId = nanoid(6);
+    rooms[roomId]={
         hostId:null,
         users:[]
     }
 
-    res.send({room})
+    res.send({roomId})
 })
-
 
 app.listen(3000);
 
