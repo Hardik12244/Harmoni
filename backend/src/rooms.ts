@@ -1,5 +1,5 @@
 export interface User {
-    userId: number;
+    userId: string;
     userName: string;
     socketId: string,
 }
@@ -16,6 +16,8 @@ export interface Room {
     users: User[];
     messages: Message[];
     queue:Track[];
+    currentTrack:string,
+    isPlaying:boolean,
 }
 
 export interface Track{

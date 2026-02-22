@@ -31,7 +31,9 @@ app.post('/rooms', (req, res) => {
         hostId: null,
         users: [],
         messages: [],
-        queue:[],
+        queue: [],
+        currentTrack: null,
+        isPlaying: false,
     }
 
     res.send({ roomId })
